@@ -118,7 +118,7 @@ body textarea:required:valid {
 }
 
 header {
-  display: inline-block;
+  display: table;
   width: 100%;
 }
 
@@ -541,4 +541,13 @@ header.navbar_fixed_top {
   width: 100%;
   z-index: 22222;
   border-bottom: 2px solid #44c0c2;
+}
+
+.mobile_menu {
+  display: none;
+  border: none;
+  background: #fff;
+  color: #44c0c2;
+  font-size: 35px;
+  margin-top: 25px;
 }

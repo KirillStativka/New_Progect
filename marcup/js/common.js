@@ -69,3 +69,6 @@ $('a[href^="#"]').click(function () {
 	$('html, body').animate({ scrollTop: $(target).offset().top }, 800);
 	return false;
 });
+$('.mobile_menu').click(function() {
+	$('.nav_top ul').slideToggle();
+});

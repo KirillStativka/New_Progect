@@ -64,6 +64,26 @@
     font-size: 48px;
 }
 }
+@media only screen and (max-width : 767px) {
+    .mobile_menu {
+        display: block;
+    }
+    .nav_top ul {
+        display: none;
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        z-index: 22222;
+        background: #fff;
+    }
+    .nav_top ul li {
+        display: block;
+        text-align: center;
+    }
+    .nav_top ul li a {
+        padding: 10px 20px;
+    }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -95,9 +115,6 @@ header {
 }
 .owl-prev, .owl-next {
     top: 90%;
-}
-.logo_top {
-    float: none;
 }
 }
 
