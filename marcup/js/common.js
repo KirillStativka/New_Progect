@@ -45,3 +45,12 @@ $(window).load(function() {
 	$(".loader").delay(400).fadeOut("slow");
 
 });
+$(".slider_wrap").owlCarousel({
+		autoPlay: 5000,
+		navigation: true,
+		slideSpeed: 300,
+		paginationSpeed: 400,
+		singleItem: true,
+		items: 1,
+		navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
+	});

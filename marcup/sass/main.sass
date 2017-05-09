@@ -91,6 +91,8 @@ body textarea:required:valid
 	width: 100%
 	max-width: 1170px
 	margin: 0 auto
+	position: relative
+	display: table
 // ----- start header section
 .logo_top
 	display: inline-block
@@ -119,3 +121,58 @@ body textarea:required:valid
 				background: #f8f9fb
 				border-bottom: 3px solid #49cbcd
 // --- end header section
+// --- start slider section
+.slider
+	background: url(../img/banner_bg.png) no-repeat
+	background-size: cover
+	width: 100%
+	height: 566px
+	.owl-carousel
+		max-width: 1170px
+.slider_box
+	text-align: center
+	color: #fff
+	padding: 130px 0px
+	h2	
+		font-family: "OpenSans_Semibold"
+		font-size: 63px
+		line-height: 24px
+		margin-bottom: 40px
+	p
+		font-size: 23px
+		line-height: 37px
+		margin-bottom: 45px
+.but_slider
+	a
+		font-family: "OpenSans_Semibold"
+		font-size: 26px
+		line-height: 24px
+		border: 3px solid #fff
+		padding: 20px 35px
+		border-radius: 6px
+		color: #fff
+		display: inline-block
+		transition: all 0.75s
+	a:hover
+		color: #484c55
+		background: #fff
+.prev_button, .next_button
+	background: url(../img/slider_button.png) no-repeat
+	width: 18px
+	height: 28px
+	display: inline-block
+	margin-top: 12px
+.owl-prev, .owl-next
+	background: #fff
+	border-radius: 50%
+	width: 50px
+	height: 50px
+	text-align: center
+	position: absolute
+	top: 40%
+.owl-prev
+	left: -55px
+	transform:  scale(-1, 1)
+.owl-next
+	right: -55px
+// --- end slider section
