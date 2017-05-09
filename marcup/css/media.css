@@ -2,18 +2,23 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-.container {
-    width: 1170px;
-  }
+  .owl-next {
+    right: 20px;
+}
+.owl-prev {
+    left: 20px;
+}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
  .container {
-    width: 970px;
+    width: 100%;
+    max-width: 970px;
   }
   .slider .owl-carousel {
-      width: 970px;
+      width: 100%;
+      max-width: 970px;
   }
   .team_section, .plans_section {
     text-align: center;
@@ -21,12 +26,7 @@
 .team_person {
     width: 43%;
 }
-.owl-next {
-    right: 20px;
-}
-.owl-prev {
-    left: 20px;
-}
+
 .plans_box {
     margin-bottom: 30px;
 }
@@ -36,7 +36,7 @@
     margin-bottom: 30px;
 }
 .contact_section {
-    height: 100%;
+    height: 1000px;
 }
 .submit {
     float: none;
@@ -53,12 +53,16 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 .container {
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
   }
 	.slider .owl-carousel {
-      width: 750px;
+      width: 100%;
+      max-width: 750px;
   }
-
+.slider_box h2 {
+    font-size: 48px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -68,6 +72,7 @@ header {
 }
 .container {
     width: 100%;
+    max-width: 375px;
 }
 .slider .owl-carousel {
     width: 100%;

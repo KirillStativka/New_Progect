@@ -114,7 +114,12 @@ body textarea:required:valid {
   max-width: 1170px;
   margin: 0 auto;
   position: relative;
-  display: table;
+  display: block;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
 }
 
 .logo_top {
@@ -527,4 +532,13 @@ body textarea:required:valid {
 .submit button:hover {
   color: #49cbcd;
   background: #fff;
+}
+
+header.navbar_fixed_top {
+  position: fixed;
+  top: 0px;
+  background: #fff;
+  width: 100%;
+  z-index: 22222;
+  border-bottom: 2px solid #44c0c2;
 }
