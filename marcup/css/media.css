@@ -2,29 +2,105 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+.container {
+    width: 1170px;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+ .container {
+    width: 970px;
+  }
+  .slider .owl-carousel {
+      width: 970px;
+  }
+  .team_section, .plans_section {
+    text-align: center;
+}
+.team_person {
+    width: 43%;
+}
+.owl-next {
+    right: 20px;
+}
+.owl-prev {
+    left: 20px;
+}
+.plans_box {
+    margin-bottom: 30px;
+}
+.contact_box {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.contact_section {
+    height: 100%;
+}
+.submit {
+    float: none;
+}
+.input_holder {
+    display: block;
+    margin-right: 0px;
+}
+.text_holder textarea {
+    max-width: 270px;
+}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
-	
+.container {
+    width: 750px;
+  }
+	.slider .owl-carousel {
+      width: 750px;
+  }
 
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+header {
+    text-align: center;
+}
+.container {
+    width: 100%;
+}
+.slider .owl-carousel {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 375px;
+}
+.team_person {
+    width: 100%;
+}
+.plans_box {
+    width: 90%;
+    margin: 30px auto;
+    margin-right: 0px;
+}
+.slider_box p {
+    font-size: 18px;
+}
+.slider_box h2 {
+    font-size: 28px;
+}
+.owl-prev, .owl-next {
+    top: 90%;
+}
+.logo_top {
+    float: none;
+}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+    .slider .owl-carousel {
+        max-width: 320px;
+    }
 }
 
 

@@ -139,6 +139,7 @@ body textarea:required:valid
 		font-size: 63px
 		line-height: 24px
 		margin-bottom: 40px
+		text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.16)
 	p
 		font-size: 23px
 		line-height: 37px
@@ -189,7 +190,8 @@ body textarea:required:valid
 .team_person
 	text-align: center
 	margin-top: 135px
-	width: 20%
+	width: 24%
+	box-sizing: border-box
 	padding: 0px 25px
 	display: inline-block
 	.team_person_img
@@ -234,7 +236,7 @@ body textarea:required:valid
 	display: inline-block
 	background: #ffffff
 	border: 1px solid #ecf0f1
-	border-radius: 2pxs
+	border-radius: 2px
 	.plans_box_title
 		background: #485460
 		color: #fff
@@ -284,3 +286,110 @@ body textarea:required:valid
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
 .plans_box:nth-child(even):hover .plans_box_title
 	text-shadow: 1px 1px 2px black, 0 0 1em #485460
+.contact_section
+	background: url(../img/footer_bg.png) no-repeat
+	background-size: cover
+	width: 100%
+	height: 688px
+.contact_section
+	padding-top: 102px
+	.contact_section_title
+		text-align: center
+		margin-bottom: 118px
+		h3
+			color: #fff
+			line-height: 24px
+			font-size: 42px
+.contact_box
+	width: 49%
+	display: inline-block
+	float: left
+	h4
+		font-size: 24px
+		line-height: 24px
+		color: #fff
+		margin-bottom: 17px
+	p
+		font-size: 14px
+		line-height: 21px
+		color: #fff
+		opacity: 0.5
+.social_contact
+	margin-top: 40px
+	margin-bottom: 20px
+	ul
+		li
+			display: inline-block
+			text-align: center
+			margin-right: 15px
+			a
+				color: #fff
+				font-size: 23px
+				line-height: 24px
+				width: 42px
+				height: 33px
+				background: #ccc
+				border-radius: 50%
+				display: inline-block
+				padding-top: 9px
+		li:nth-child(1) a
+			background: #3b5997
+		li:nth-child(2) a
+			background: #3ec2f3
+		li:nth-child(3) a
+			background: #e44c41
+.contact_copyright
+	p, .contact_copyright_mail a
+		font-family: "MyriadPro"
+	.contact_copyright_phone a, .contact_copyright_mail a, p
+		color: #bface2
+		font-size: 14px
+		line-height: 24px
+.input_holder
+	display: inline-block
+	margin-right: 29px
+	margin-bottom: 30px
+	input
+		width: 270px
+		background: #fff
+		border-radius: 4px
+		border: none
+		font-size: 16px
+		line-height: 24px
+		box-sizing: border-box
+		color: #c1c1c1
+		padding: 16px 20px
+.input_holder.last_child
+	margin-right: 0px
+.text_holder
+	margin-bottom: 30px
+	textarea
+		width: 100%
+		height: 175px
+		background: #fff
+		border-radius: 4px
+		border: none
+		box-sizing: border-box
+		resize: none
+		font-size: 16px
+		line-height: 24px
+		color: #c1c1c1
+		padding: 16px 20px
+.submit
+	display: inline-block
+	float: right
+	
+	button
+		background: #49cbcd
+		color: #fff
+		font-size: 22px
+		line-height: 24px
+		padding: 15px 54px
+		border-radius: 4px
+		text-align: center
+		border: 0px
+		cursor: pointer
+		transition: all 0.75s
+	button:hover
+		color: #49cbcd
+		background: #fff
