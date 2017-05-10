@@ -335,19 +335,37 @@ header
 				border-radius: 50%
 				display: inline-block
 				padding-top: 9px
+				transition: all 0.75s
 		li:nth-child(1) a
 			background: #3b5997
 		li:nth-child(2) a
 			background: #3ec2f3
 		li:nth-child(3) a
 			background: #e44c41
+		li:nth-child(1) a:hover
+			background: #fff
+			color: #3b5997
+			text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.16)
+		li:nth-child(2) a:hover
+			color: #3ec2f3
+			background: #fff
+			text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.16)
+		li:nth-child(3) a:hover
+			color: #e44c41
+			background: #fff
+			text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.16)
 .contact_copyright
 	p, .contact_copyright_mail a
 		font-family: "MyriadPro"
+		transition: all 0.75s
 	.contact_copyright_phone a, .contact_copyright_mail a, p
 		color: #bface2
 		font-size: 14px
 		line-height: 24px
+		transition: all 0.75s
+.contact_copyright
+	a:hover
+		color: #fff
 .input_holder
 	display: inline-block
 	margin-right: 29px
@@ -378,6 +396,23 @@ header
 		line-height: 24px
 		color: #c1c1c1
 		padding: 16px 20px
+		font-family: "OpenSans_Regular"
+.input_holder  input::-webkit-input-placeholder
+	color: #c1c1c1
+.input_holder  input::-moz-placeholder
+	color: #c1c1c1
+.input_holder  input:-moz-placeholder
+	color: #c1c1c1
+.input_holder  input:-ms-input-placeholder
+	color: #c1c1c1
+.text_holder  textarea::-webkit-input-placeholder
+	color: #c1c1c1
+.text_holder  textarea::-moz-placeholder
+	color: #c1c1c1
+.text_holder  textarea:-moz-placeholder
+	color: #c1c1c1
+.text_holder  textarea:-ms-input-placeholder
+	color: #c1c1c1
 .submit
 	display: inline-block
 	float: right
