@@ -45,9 +45,9 @@
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Service</a></li>
 					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Team</a></li>
+					<li><a href="#team">Team</a></li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 	<!-- Team section -->
-	<div class="container">
+	<div class="container" id="team">
 		<div class="team_section">
 			<div class="team_section_title">
 				<h3>The Team</h3>
@@ -176,7 +176,7 @@
 	</div>
 
 	<!-- Contact section -->
-	<div class="contact_section">
+	<div class="contact_section" id="contact">
 		<div class="container">
 			<div class="contact_section_title">
 				<h3>Contact Us</h3>
@@ -199,8 +199,8 @@
 					</div>
 				</div>
 				<div class="contact_box">
-					<div class="input_holder"><input type="name" placeholder="Name"></div>
-					<div class="input_holder last_child"><input type="mail" placeholder="Email"></div>
+					<div class="input_holder"><input type="name" placeholder="Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required></div>
+					<div class="input_holder last_child"><input type="mail" placeholder="Email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" required></div>
 					<div class="text_holder"><textarea rows="" cols="" placeholder="Message"></textarea></div>
 					<div class="submit"><button>Send</button></div>
 				</div>

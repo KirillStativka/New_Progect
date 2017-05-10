@@ -1,12 +1,18 @@
 /*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-  .owl-next {
+@media only screen and (max-width : 1290px) {
+      .owl-next {
     right: 20px;
 }
 .owl-prev {
     left: 20px;
+}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+.container {
+    padding: 0px 15px;
+    box-sizing: border-box;
 }
 }
 
@@ -75,6 +81,7 @@
         width: 100%;
         z-index: 22222;
         background: #fff;
+        border-bottom: 2px solid #44c0c2;
     }
     .nav_top ul li {
         display: block;

@@ -1,14 +1,6 @@
 $(function () {
 
-	//SVG Fallback
-	if (!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function () {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
-
 	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function () { //Change
 		var th = $(this);
 		$.ajax({
@@ -38,13 +30,14 @@ $(function () {
 	$("img, a").on("dragstart", function (event) { event.preventDefault(); });
 
 });
-
+//preolader
 $(window).load(function () {
 
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
 });
+//slider 
 $(".slider_wrap").owlCarousel({
 	autoPlay: 5000,
 	navigation: true,
@@ -54,6 +47,7 @@ $(".slider_wrap").owlCarousel({
 	items: 1,
 	navigationText: ['<span class="prev_button"></span>', '<span class="next_button"></span>']
 });
+//add to header fixed top
 $(window).scroll(function () {
 
 	if ($('body').scrollTop() > 100) {
@@ -63,12 +57,19 @@ $(window).scroll(function () {
 	}
 
 });
-
+// anchor scroll link
 $('a[href^="#"]').click(function () {
 	var target = $(this).attr('href');
 	$('html, body').animate({ scrollTop: $(target).offset().top }, 800);
 	return false;
 });
-$('.mobile_menu').click(function() {
+//mobile menu
+$('.mobile_menu').click(function () {
 	$('.nav_top ul').slideToggle();
+});
+//hide mobile menu after click
+$(document).ready(function () {
+	if ($(window).width() < 768) {
+		$('.nav_top a').click(function () { $('.nav_top ul').hide() });
+	}
 });
