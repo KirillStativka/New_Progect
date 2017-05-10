@@ -97,6 +97,9 @@
 header {
     text-align: center;
 }
+html.js .loader .loader_inner {
+    margin-left: -50px;
+}
 .container {
     width: 100%;
     max-width: 375px;
